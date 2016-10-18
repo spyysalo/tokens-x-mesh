@@ -72,7 +72,7 @@ def process(fn):
     tokens = [t for s in sentences for t in s]
     for term in terms:
         for token in tokens:
-            print('{{{}}}\t{}'.format(term, token))
+            print('{{{}}}\t{}'.format(term, token.encode('utf-8')))
 
 
 def main(argv):
